@@ -1,0 +1,16 @@
+<div class="border-bottom" style="margin-bottom:16px; padding-bottom:5px;">
+  <div class="col-9">
+    <h4 style="color:rgb(100,180,255); margin-bottom:4px;">{{course['title']}}</h4>
+    <div>
+      <b>Location:</b>{{course['location']}}          
+    </div>
+    {% if 'fees' in course %}
+    <div>
+      <b>Fees:</b>{{course['fees']}} 
+    </div>
+    {% endif %}
+  </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+     <button type="button" class="btn btn-outline-primary" >Book Course</button>
+  </div>
+</div>
